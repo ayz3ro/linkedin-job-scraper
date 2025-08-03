@@ -23,7 +23,7 @@ def get_user_input() -> tuple[str, str, int]:
 
 
 def generate_filename(query: str, location: str) -> str:
-    """Создание имени файла с текущей датой."""
+    """Creating a file name with the current date."""
     date_str = strftime('%Y-%m-%d')
     return f"{query}_{location}_{date_str}.csv".replace(" ", "_")
 
